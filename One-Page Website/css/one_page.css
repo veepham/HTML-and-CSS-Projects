@@ -233,6 +233,9 @@ section {
     box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
     font-family: sans-serif;
 }
+p {
+    text-align: center;
+}
 
 /*---footer---*/
 .footer {
