@@ -128,10 +128,15 @@ section {
     background-color: lavender;
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
 }
-
-.flex-container {
+.container {
+    width: 100%;
+    padding: 1px;
+    border-radius: 8px;
     margin: 0px auto;
     background-color: rgba(255, 0, 255, 0.3);
+}
+.flex-container {
+    margin: 0px auto;
     width: 105%
 }
 .photo-container {
@@ -147,23 +152,31 @@ section {
     max-width: 100%;
     width: 300px;
     height: 400px;
-    background-color: rgba(255, 0, 255, 0.3);
+    
 }
 
 
 /*--VIDEO STYLE--*/
-#videos {
-    border-radius: 8px;
-    box-sizing: -1px -1px 1 px 0 rgba(0,0,0,1), 1px 2px 10px 0 rgba(0,0,0,0.5);
-    margin: 0% auto;
-}
-.container {
-    width: 100%;
-    padding: 1px;
-    border-radius: 8px;
-    margin: 0px auto;
+#video {
     background-color: rgba(255, 0, 255, 0.3);
+    border-radius: 8px;
+    margin: 0% auto;
+    width: 100%;
+    padding: 10px;
+}
+.vids {
+    background-color: rgba(255, 0, 255, 0.3);
+    border-radius: 8px;
+    width: 100%;
+    margin: 115% 10% 0% 0%
+}
     
+.youtube {
+    background-color: rgba(255, 0, 255, 0.3);
+    border-radius: 8px;
+    margin: 0% auto;
+    padding: 15px;
+    text-align: center;
 }
 /*--CONTACT STYLE--*/
 #contact {
@@ -219,4 +232,13 @@ section {
     background: lightslategray;
     box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
     font-family: sans-serif;
+}
+
+/*---footer---*/
+.footer {
+    color: #000;
+    text-shadow: 2px 2px 8px 0 rgba(0,0,0,1);
+    margin-top: 5px;
+    padding: 2px 5px 2px 5px;
+    text-align: center;
 }
