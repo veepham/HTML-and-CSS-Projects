@@ -1,5 +1,6 @@
-table {
-	border: 1px solid silver;
+table, th, td {
+	border: 4px solid rgb(0, 0, 0);
+	padding: 5px;
 }
 td:hover {
 	background-color: yellow;
@@ -12,4 +13,9 @@ tr, th {
 tr, td {
 	background-color: darkgreen;
 	color: white;
+}
+@media screen and (max-width: 600px) {
+	html {
+		background-color: lightblue;
+	}
 }
