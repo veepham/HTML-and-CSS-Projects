@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            var Movie= "<movie>" + 
+                "<title>Everything Everywhere All at Once</title>" +
+                "<director>Daniel Kwan</director>" +
+                "<starring>Michelle Yeoh</starring>" +
+                "<year>2022</year>" +
+                "</movie>";
+            
+            XML_Parser = new DOMParser();
+            XML_Document = XML_Parser.parseFromString(Movie, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML = XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
